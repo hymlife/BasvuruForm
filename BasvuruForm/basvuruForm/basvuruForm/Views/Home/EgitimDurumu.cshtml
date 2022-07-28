@@ -1,0 +1,52 @@
+﻿
+@model basvuruForm.Models.Entities.EgitimDurum
+@{
+    ViewData["Title"] = "EgitimDurumu";
+}
+
+<form action="/examples/actions/confirmation.php" method="post">
+    <h3>Kişisel Bilgiler</h3>
+    <br />
+
+    <div class="mb-3">
+        <label class="form-label" for="inputEmail">Mezun Olduğunuz Lise</label>
+        <input class="form-control" id="inputEmail" placeholder="Mezun Olduğunuz Lise" required>
+        <input class="form-control" id="inputPassword" placeholder="Bitirme Tarihi"  required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="inputPassword">Mezun Olunan Yüksek Okul</label>
+        <input class="form-control" id="inputPassword" placeholder="Mezun Olunan Yüksek Okul" required>
+        <input class="form-control" id="inputPassword" placeholder="Bitirme Tarihi" required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" for="inputPassword">LisansÜstü Eğitimi</label>
+        <input class="form-control" id="inputPassword" placeholder="LisansÜstü Eğitimi" required>
+        <input class="form-control" id="inputPassword" placeholder="Bitirme Tarihi" required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" for="inputPassword">Bitirilen Kurslar</label>
+        <input class="form-control" id="inputPassword" placeholder="Lütfen Hepsini Bir Arada Yazınız" required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" for="inputPassword">Bilinen Yabancı Diller</label>
+        <input class="form-control" id="inputPassword" placeholder="Lütfen Hepsini Tek Cümlede Yazınız" required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label" for="inputPassword">Ehliyet Durumu</label>
+        <input class="form-control" id="inputPassword" placeholder="Lütfen Hepsini Tek Cümlede Yazınız" required>
+    </div>
+
+
+
+    
+    <div style="margin:25px;padding-bottom:25px">
+        <button type="submit" asp-action="Index" class="btn btn-primary">Önceki Sayfa</button>
+        <button type="submit" asp-action="IsTecrubesi" class="btn btn-primary">Sonraki Sayfa</button>
+    </div>
+    
+    
+</form>

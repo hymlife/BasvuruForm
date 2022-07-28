@@ -1,0 +1,75 @@
+﻿@model basvuruForm.Models.Entities.Personal
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div >
+    <ul>
+        <li>Bütün soruları eksiksiz olarak yanıtlayınız</li>
+        <li> formu doldurmuş olmanız şirketimizi hiçbir şekilde taahüt altına sokmaz</li>
+        <li> işe alınanların yanlış bilgi verdikleri tespiti halinde hizmet akdi ihbarsız ve tazminatsız feshedilir</li>
+    </ul>
+
+    <form action="/examples/actions/confirmation.php" method="post">
+        <h3>Kişisel Bilgiler</h3>
+        <br />
+
+        <div class="mb-3">
+            <label class="form-label" for="inputEmail">AdSoyad</label>
+            <input  class="form-control" id="inputEmail" placeholder="AdSoyad" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="inputPassword">Doğum tarihi</label>
+            <input  class="form-control" id="inputPassword" placeholder="Doğum Tarihi" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="inputPassword">Doğum Yeri</label>
+            <input  class="form-control" id="inputPassword" placeholder="Doğum Yeri" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="inputPassword">Cinsiyeti</label> <br />
+            <div class="radio">
+                <label><input type="radio" name="optradio1" checked> Erkek</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio1"> Kadın</label>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="inputPassword">Medeni Durumu</label> <br />
+
+            <div class="radio">
+                <label><input type="radio" name="optradio" checked>Bekar</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="optradio">Evli</label>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="inputPassword">Adresi</label>
+            <input  class="form-control" id="inputPassword" placeholder="Adresi" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="inputPassword">Telefon</label>
+            <input  class="form-control" id="inputPassword" placeholder="Telefon" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="inputPassword">E-Posta</label>
+            <input type="email" class="form-control" id="inputPassword" placeholder="E-Posta" required>
+        </div>
+
+        
+
+
+        <button type="submit" asp-action="EgitimDurumu" class="btn btn-primary" style="margin-bottom:25px;margin-top:25px">Sıradaki Sayfa</button>
+    </form>
+
+
+</div>
