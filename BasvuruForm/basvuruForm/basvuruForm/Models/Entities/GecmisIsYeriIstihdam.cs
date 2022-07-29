@@ -11,6 +11,7 @@ namespace basvuruForm.Models.Entities
         public string AylikGelir { get; set; }
         public string GirisCikisTarih { get; set; }
         public string AyrilikNedeni { get; set; }
+        public string Cv { get; set; }
         public string IsTipi { get; set; }
         public string SeyahatDurumu { get; set; }
         public string MesaiHarici { get; set; }

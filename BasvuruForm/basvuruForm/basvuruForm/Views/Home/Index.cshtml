@@ -11,31 +11,30 @@
         <li> işe alınanların yanlış bilgi verdikleri tespiti halinde hizmet akdi ihbarsız ve tazminatsız feshedilir</li>
     </ul>
 
-    <form action="/examples/actions/confirmation.php" method="post">
+    <form asp-action="VeriAlIndex" asp-controller="Home" method="post">
         <h3>Kişisel Bilgiler</h3>
         <br />
 
         <div class="mb-3">
-            <label class="form-label" for="inputEmail">AdSoyad</label>
-            <input  class="form-control" id="inputEmail" placeholder="AdSoyad" required>
+            <label class="form-label">AdSoyad</label>
+            <input asp-for="AdSoyad"  class="form-control" name="AdSoyad" placeholder="AdSoyad" required>
         </div>
         <div class="mb-3">
-            <label class="form-label" for="inputPassword">Doğum tarihi</label>
-            <input  class="form-control" id="inputPassword" placeholder="Doğum Tarihi" required>
-        </div>
-
-        <div class="mb-3">
-            <label class="form-label" for="inputPassword">Doğum Yeri</label>
-            <input  class="form-control" id="inputPassword" placeholder="Doğum Yeri" required>
+            <label class="form-label">Doğum tarihi</label>
+            <input asp-for="DogumTarihi" class="form-control" name="DogumTarihi" placeholder="Doğum Tarihi" required>
         </div>
 
         <div class="mb-3">
+            <label class="form-label" >Doğum Yeri</label>
+            <input asp-for="DogumYeri" class="form-control" name="DogumYeri" placeholder="Doğum Yeri" required>
+        </div>
+               <div class="mb-3">
             <label class="form-label" for="inputPassword">Cinsiyeti</label> <br />
             <div class="radio">
-                <label><input type="radio" name="optradio1" checked> Erkek</label>
+                <label><input type="radio" name="Cinsiyet" checked> Erkek</label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="optradio1"> Kadın</label>
+                <label><input type="radio" name="Cinsiyet"> Kadın</label>
             </div>
         </div>
 
@@ -43,26 +42,26 @@
             <label class="form-label" for="inputPassword">Medeni Durumu</label> <br />
 
             <div class="radio">
-                <label><input type="radio" name="optradio" checked>Bekar</label>
+                <label><input type="radio" name="MedeniDurum" checked>Bekar</label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="optradio">Evli</label>
+                <label><input type="radio" name="MedeniDurum">Evli</label>
             </div>
         </div>
 
         <div class="mb-3">
             <label class="form-label" for="inputPassword">Adresi</label>
-            <input  class="form-control" id="inputPassword" placeholder="Adresi" required>
+            <input asp-for="Adres"  class="form-control" name="Adres" placeholder="Adresi" required>
         </div>
 
         <div class="mb-3">
             <label class="form-label" for="inputPassword">Telefon</label>
-            <input  class="form-control" id="inputPassword" placeholder="Telefon" required>
+            <input asp-for="Telefon"  class="form-control" name="Telefon" placeholder="Telefon" required>
         </div>
 
         <div class="mb-3">
             <label class="form-label" for="inputPassword">E-Posta</label>
-            <input type="email" class="form-control" id="inputPassword" placeholder="E-Posta" required>
+            <input asp-for="Mail" type="email" class="form-control" name="Mail" placeholder="E-Posta" required>
         </div>
 
         

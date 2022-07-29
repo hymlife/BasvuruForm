@@ -8,39 +8,41 @@
 <h1>IsTecrubesi</h1>
 
 
-<div class="mb-3">
+<form asp-action="VeriAlIsTecrubesi" asp-controller="Home" method="post">
+    <div class="mb-3">
 
-    <label class="form-label" style="margin-top:10px;" for="inputPassword">Geçmiş İş yeri bilgileri </label>>
-    <input class="form-control" style="margin-top:10px;" id="inputPassword" placeholder="Görevli Bulunduğunuz Kişi" required>
-    <input class="form-control" style="margin-top:10px;" id="inputPassword" placeholder="Aylık Geliriniz" required>
-    <input class="form-control" style="margin-top:10px;" id="inputPassword" placeholder="Giriş Çıkış Tarihleriniz" required>
-    <input class="form-control" style="margin-top:10px;" id="inputPassword" placeholder="Ayrılış Nedenleriniz" required>s
-</div>
-
-
-<div style="margin-top:25px;margin-bottom:25px;">
-    <label>Kısa Özgeçmişinizi yazıp kendinizi tanıtınız </label>
-    <input placeholder="en fazla 5000 karakter giriniz" class="form-control" style="height:250px"  >
-</div>
-
-<div>
-    <label class="form-label" style="margin-top:10px;" for="inputPassword">İstihdam Gelir Durumu </label>
-    <input class="form-control" style="margin-top:10px;" id="inputPassword" placeholder="Ne tip iş tercih edersiniz" required>
-    <input class="form-control" style="margin-top:10px;" id="inputPassword" placeholder="Seyahat Edebilirmisiniz" required>
-    <input class="form-control" style="margin-top:10px;" id="inputPassword" placeholder="Mesai Saati Çalışmayı Kabul Edermisiniz" required>
-    <input class="form-control" style="margin-top:10px;" id="inputPassword" placeholder="İstediğiniz Maaş Ücreti" required>
-    <input class="form-control" style="margin-top:10px;" id="inputPassword" placeholder="Ne zaman Başlayabilirsiniz" required>
-    <input class="form-control" style="margin-top:10px;" id="inputPassword" placeholder="Staj İçin başvuru yaptıysanız başlama ve bitiş tarihlerini yazınız" required>
-</div>
+        <label class="form-label" style="margin-top:10px;">Geçmiş İş yeri bilgileri </label>>
+        <input class="form-control" style="margin-top:10px;" asp-for="GorevliKisi" name="inputGorevli" placeholder="Görevli Bulunduğunuz Kişi" required>
+        <input class="form-control" style="margin-top:10px;" asp-for="AylikGelir" name="inputGelir" placeholder="Aylık Geliriniz" required>
+        <input class="form-control" style="margin-top:10px;" asp-for="GirisCikisTarih" name="inputGirisCikisTarih" placeholder="Giriş Çıkış Tarihleriniz" required>
+        <input class="form-control" style="margin-top:10px;" asp-for="AyrilikNedeni" name="inputAyrilis" placeholder="Ayrılış Nedenleriniz" required>s
+    </div>
 
 
-    <div class="form-check" style="margin-top:25px">  
+    <div style="margin-top:25px;margin-bottom:25px;">
+        <label>Kısa Özgeçmişinizi yazıp kendinizi tanıtınız </label>
+        <input placeholder="en fazla 5000 karakter giriniz" asp-for="Cv" name="inputCv" class="form-control" style="height:250px">
+    </div>
+
+    <div>
+        <label class="form-label" style="margin-top:10px;" for="inputPassword">İstihdam Gelir Durumu </label>
+        <input class="form-control" style="margin-top:10px;" asp-for="IsTipi" name="inputIsTipi" placeholder="Ne tip iş tercih edersiniz" required>
+        <input class="form-control" style="margin-top:10px;" asp-for="SeyahatDurumu" name="inputSeyahat" placeholder="Seyahat Edebilirmisiniz" required>
+        <input class="form-control" style="margin-top:10px;" asp-for="MesaiHarici" name="inputMesaiDisi" placeholder="Mesai Saati Haricinde Çalışmayı Kabul Edermisiniz" required>
+        <input class="form-control" style="margin-top:10px;" asp-for="MaasUcreti" name="inputMaasBeklenti" placeholder="İstediğiniz Maaş Ücreti" required>
+        <input class="form-control" style="margin-top:10px;" asp-for="BaslangicTarihi" name="inputBaslamaTarih" placeholder="Ne zaman Başlayabilirsiniz" required>
+        <input class="form-control" style="margin-top:10px;" asp-for="StajBaslamaTarih" name="inputStajIcin" placeholder="Staj İçin başvuru yaptıysanız başlama ve bitiş tarihlerini yazınız" required>
+    </div>
+
+
+    <div class="form-check" style="margin-top:25px">
         <input class="form-check-input" type="checkbox" id="checkRemember">
         <label class="form-check-label" for="checkRemember">2 aylık bir deneme sürecini onaylıyor musunuz</label>
     </div>
 
     <div style="margin:25px;padding-bottom:25px">
         <button type="submit" asp-action="EgitimDurumu" class="btn btn-primary">Önceki Sayfa</button>
-        <button type="submit" asp-action="LastPage" class="btn btn-primary" >Başvuruyu Tamamla</button>
+        <button type="submit" asp-action="LastPage" class="btn btn-primary">Başvuruyu Tamamla</button>
     </div>
+</form>
     

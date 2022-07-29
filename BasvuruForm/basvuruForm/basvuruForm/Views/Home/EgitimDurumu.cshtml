@@ -4,40 +4,40 @@
     ViewData["Title"] = "EgitimDurumu";
 }
 
-<form action="/examples/actions/confirmation.php" method="post">
+<form asp-action="VeriAlEgitimDurumu" asp-controller="Home" method="post">
     <h3>Kişisel Bilgiler</h3>
     <br />
 
     <div class="mb-3">
-        <label class="form-label" for="inputEmail">Mezun Olduğunuz Lise</label>
-        <input class="form-control" id="inputEmail" placeholder="Mezun Olduğunuz Lise" required>
-        <input class="form-control" id="inputPassword" placeholder="Bitirme Tarihi"  required>
+        <label class="form-label">Mezun Olduğunuz Lise</label>
+        <input class="form-control" asp-for="LiseMezuniyet" name="inputMezunLiseAd" placeholder="Mezun Olduğunuz Lise" required>
+        <input class="form-control" asp-for="LiseMezuniyetTarih" name="inputMezunLiseTarih"  placeholder="Bitirme Tarihi"  required>
     </div>
     <div class="mb-3">
-        <label class="form-label" for="inputPassword">Mezun Olunan Yüksek Okul</label>
-        <input class="form-control" id="inputPassword" placeholder="Mezun Olunan Yüksek Okul" required>
-        <input class="form-control" id="inputPassword" placeholder="Bitirme Tarihi" required>
-    </div>
-
-    <div class="mb-3">
-        <label class="form-label" for="inputPassword">LisansÜstü Eğitimi</label>
-        <input class="form-control" id="inputPassword" placeholder="LisansÜstü Eğitimi" required>
-        <input class="form-control" id="inputPassword" placeholder="Bitirme Tarihi" required>
+        <label class="form-label">Mezun Olunan Yüksek Okul</label>
+        <input class="form-control" asp-for="UniversiteMezuniyet" name="inputMezunUniAd" placeholder="Mezun Olunan Yüksek Okul" required>
+        <input class="form-control" asp-for="UnivertsiteMezuniyetTarih" name="inputMezunUniTarih" placeholder="Bitirme Tarihi" required>
     </div>
 
     <div class="mb-3">
-        <label class="form-label" for="inputPassword">Bitirilen Kurslar</label>
-        <input class="form-control" id="inputPassword" placeholder="Lütfen Hepsini Bir Arada Yazınız" required>
+        <label class="form-label">LisansÜstü Eğitimi</label>
+        <input class="form-control" asp-for="LisansUstuMezuniyet" name="inputMezunYuksekLisansAd" placeholder="LisansÜstü Eğitimi" required>
+        <input class="form-control" asp-for="LisansUstuMezuniyetTarih" name="inputMezunYuksekLisansTarih" placeholder="Bitirme Tarihi" required>
     </div>
 
     <div class="mb-3">
-        <label class="form-label" for="inputPassword">Bilinen Yabancı Diller</label>
-        <input class="form-control" id="inputPassword" placeholder="Lütfen Hepsini Tek Cümlede Yazınız" required>
+        <label class="form-label">Bitirilen Kurslar</label>
+        <input class="form-control" asp-for="BitirilenKurslar" name="inputBitirilenKurs" placeholder="Lütfen Hepsini Bir Arada Yazınız" required>
     </div>
 
     <div class="mb-3">
-        <label class="form-label" for="inputPassword">Ehliyet Durumu</label>
-        <input class="form-control" id="inputPassword" placeholder="Lütfen Hepsini Tek Cümlede Yazınız" required>
+        <label class="form-label">Bilinen Yabancı Diller</label>
+        <input class="form-control" asp-for="YabanciDiller" name="inputYabanciDil" placeholder="Lütfen Hepsini Tek Cümlede Yazınız" required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Ehliyet Durumu</label>
+        <input class="form-control" asp-for="EhliyetDurumu" name="inputEhliyet" placeholder="Lütfen Hepsini Tek Cümlede Yazınız" required>
     </div>
 
 

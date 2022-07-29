@@ -236,3 +236,7 @@ C:\Users\veri2\Desktop\halil ibrahim\BasvuruForm\basvuruForm\basvuruForm\obj\Deb
 C:\Users\veri2\Desktop\halil ibrahim\BasvuruForm\basvuruForm\basvuruForm\obj\Debug\net5.0\ref\basvuruForm.dll
 C:\Users\veri2\Desktop\halil ibrahim\BasvuruForm\basvuruForm\basvuruForm\obj\Debug\net5.0\basvuruForm.pdb
 C:\Users\veri2\Desktop\halil ibrahim\BasvuruForm\basvuruForm\basvuruForm\obj\Debug\net5.0\basvuruForm.genruntimeconfig.cache
+C:\Users\veri2\Desktop\halil ibrahim\BasvuruForm\basvuruForm\basvuruForm\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\veri2\Desktop\halil ibrahim\BasvuruForm\basvuruForm\basvuruForm\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\veri2\Desktop\halil ibrahim\BasvuruForm\basvuruForm\basvuruForm\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\veri2\Desktop\halil ibrahim\BasvuruForm\basvuruForm\basvuruForm\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll

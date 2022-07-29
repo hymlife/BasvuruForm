@@ -1,6 +1,8 @@
 ﻿using basvuruForm.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
+using basvuruForm.Models.Entities;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -23,7 +25,25 @@ namespace basvuruForm.Controllers
             return View();
         }
 
-       public ViewResult EgitimDurumu()
+        [HttpPost]
+        public IActionResult Index(Personal personel)
+        {
+
+            
+
+
+
+            return View();
+        }
+
+
+        public ViewResult EgitimDurumu()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult EgitimDurumu(EgitimDurum egitim)
         {
             return View();
         }
@@ -33,10 +53,19 @@ namespace basvuruForm.Controllers
             return View();
         }
 
-        public ViewResult LastPage()
+        [HttpPost]
+        public IActionResult IsTecrubesi(GecmisIsYeriIstihdam gecmisIsYeriIstihdam)
         {
             return View();
         }
+
+        public IActionResult LastPage()
+        {
+            return View();
+        }
+
+
+     
 
         public IActionResult Privacy()
         {

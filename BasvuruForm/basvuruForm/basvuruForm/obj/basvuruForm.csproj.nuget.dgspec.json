@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\veri2\\Documents\\GitHub\\BasvuruForm\\BasvuruForm\\basvuruForm\\basvuruForm\\basvuruForm.csproj": {}
+    "C:\\Users\\veri2\\Desktop\\halil ibrahim\\BasvuruForm\\basvuruForm\\basvuruForm\\basvuruForm.csproj": {}
   },
   "projects": {
-    "C:\\Users\\veri2\\Documents\\GitHub\\BasvuruForm\\BasvuruForm\\basvuruForm\\basvuruForm\\basvuruForm.csproj": {
+    "C:\\Users\\veri2\\Desktop\\halil ibrahim\\BasvuruForm\\basvuruForm\\basvuruForm\\basvuruForm.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\veri2\\Documents\\GitHub\\BasvuruForm\\BasvuruForm\\basvuruForm\\basvuruForm\\basvuruForm.csproj",
+        "projectUniqueName": "C:\\Users\\veri2\\Desktop\\halil ibrahim\\BasvuruForm\\basvuruForm\\basvuruForm\\basvuruForm.csproj",
         "projectName": "basvuruForm",
-        "projectPath": "C:\\Users\\veri2\\Documents\\GitHub\\BasvuruForm\\BasvuruForm\\basvuruForm\\basvuruForm\\basvuruForm.csproj",
+        "projectPath": "C:\\Users\\veri2\\Desktop\\halil ibrahim\\BasvuruForm\\basvuruForm\\basvuruForm\\basvuruForm.csproj",
         "packagesPath": "C:\\Users\\veri2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\veri2\\Documents\\GitHub\\BasvuruForm\\BasvuruForm\\basvuruForm\\basvuruForm\\obj\\",
+        "outputPath": "C:\\Users\\veri2\\Desktop\\halil ibrahim\\BasvuruForm\\basvuruForm\\basvuruForm\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +44,16 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[5.0.2, )"
