@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\basvuruForm",
+    "\\basvuruForm\\Controllers"
   ],
+  "SelectedNode": "\\basvuruForm\\Controllers\\HomeController.cs",
   "PreviewInSolutionExplorer": false
 }
